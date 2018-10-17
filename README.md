@@ -1,6 +1,6 @@
-# Analyses of morphotype and individual count data in:
+# Analyses and data from Castledine_ et al. (2018) JEB
 
-_Castledine_ et al. (2018) A shared coevolutionary history does not alter the outcome of coalescence in experimental populations of Pseudomonas fluorescens. Journal of Evolutionary Biology_ 
+Data, analyses and figures from: _Castledine et al. (2018) A shared coevolutionary history does not alter the outcome of coalescence in experimental populations of Pseudomonas fluorescens. Journal of Evolutionary Biology_ 
 
 DOI of paper:
 
@@ -12,7 +12,7 @@ DOI of analyses and dataset:
 
 ### Outline
 
-This repository contains the final datasets, R scripts containing the analyses, and figures of the above-mentioned paper. It can recreate all of the analyses and figures in the main text (Figure 2 tand Figure 3). Figure 1 is present as a `pdf` and `png`.
+This repository contains the final datasets, R scripts containing the analyses, and figures of the above-mentioned paper. It can recreate the analyses and figures in the main text (Figure 2 tand Figure 3). Figure 1 is present as a `pdf`.
 
 ### Feedback
 
@@ -53,4 +53,4 @@ This code is licensed under GPL-3.
     - `WT`: input morphs of the wild-type populations and the community they came from
     - `LacZ`: input morphs of the LacZ populations and the community they came from
 
-__All analyses are done in R version 3.5.1, on macOS High Sierra 10.13.6. I am unsure whether some older versions of R will support all of the packages and whether the analyses will run exactly as in the analyses for the paper.__
+__All analyses are done in R version 3.5.1, on macOS High Sierra 10.13.6. I am unsure whether some older versions of R will support all of the packages.__
