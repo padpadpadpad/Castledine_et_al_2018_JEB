@@ -8,7 +8,7 @@ DOI of paper:
 
 DOI of analyses and dataset:
 
-
+[![DOI](https://zenodo.org/badge/153314427.svg)](https://zenodo.org/badge/latestdoi/153314427)
 
 ### Outline
 
