@@ -120,7 +120,7 @@ x_lab_text <- c(expression(atop('LZ'[coev], '\nWT'[coev])),
 ggplot(d, aes(interaction(resident, invader), rel_fitness)) +
   geom_hline(aes(yintercept = 1), linetype = 2) +
   geom_pretty_boxplot(fill = 'black', col = 'black') +
-  geom_point(position = position_jitter(width = 0.1), size = 3, shape = 21, fill = 'white') +
+  geom_point(position = position_jitter(width = 0.1), size = 5, shape = 21, fill = 'white') +
   theme_bw(base_family = 'Times', base_size = 14) +
   ylab('Relative success of LacZ compared to wild-type community') +
   xlab('Coevolutionary history of LacZ and wild-type communities') +

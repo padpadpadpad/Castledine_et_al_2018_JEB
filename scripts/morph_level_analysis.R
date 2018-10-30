@@ -176,7 +176,14 @@ d_means <- mutate(d_means, letter = case_when(shape == 'alone' ~ '',
                                               TRUE ~ 'R'),
                   x_axis = as.factor(paste(LZ_div, WT_div, sep = '_')))
 d_means$x_axis <- forcats::fct_relevel(d_means$x_axis, '1_2', after = Inf)
-d_means$x_axis2 = jitter(as.numeric(d_means$x_axis))
+
+# adding jitter so points do not overlap
+d_means <- group_by(d_means, x_axis, morph) %>%
+  arrange(rel_fitness) %>%
+  mutate(., temp = rep_len(1:3, n())) %>%
+  mutate(., x_axis2 = case_when(temp == 1 ~ as.numeric(x_axis) + runif(n(), 0.075, 0.2),
+                                temp == 3 ~ as.numeric(x_axis) - runif(n(), 0.075, 0.2),
+                                temp == 2 ~ as.numeric(x_axis) + runif(n(), -0.05, 0.05)))
 
 
 plot_WS <- ggplot(filter(d_means, morph == 'WS'), aes(x_axis, rel_fitness)) +
@@ -212,5 +219,3 @@ plot_both <- grid.arrange(plot_SM + ylab('') + xlab(''), plot_WS + ylab('') + xl
 # save plot
 ggsave(file.path(path_fig, 'Figure_2.pdf'), plot_both, height = 6, width = 11)
 ggsave(file.path(path_fig, 'Figure_2.png'), plot_both, height = 6, width = 11)
-
-
