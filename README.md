@@ -2,13 +2,9 @@
 
 Data, analyses and figures from: _Castledine et al. (2018) A shared coevolutionary history does not alter the outcome of coalescence in experimental populations of Pseudomonas fluorescens. Journal of Evolutionary Biology_ 
 
-DOI of paper:
+DOI of paper: https://doi.org/10.1111/jeb.13394
 
-
-
-DOI of analyses and dataset:
-
-[![DOI](https://zenodo.org/badge/153314427.svg)](https://zenodo.org/badge/latestdoi/153314427)
+DOI of analyses and dataset: https://doi.org/10.5281/zenodo.1464583
 
 ### Outline
 
